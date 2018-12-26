@@ -1,0 +1,19 @@
+---
+layout: default
+title: 2019 Season
+---
+
+<!-- People -->
+{% assign 2019 = site.data.2019 %}
+{% assign 2019 = 2019 | sort:"quote" %}
+
+<!-- Document -->
+
+{% for person in people %}
+
+<ul>
+<li><strong>{{ quote.quote }}</strong> ({{ quote.who said it }}, {{ quote.date it was said }})</li>
+</ul>
+
+{% endfor %}
+
